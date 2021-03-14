@@ -14,6 +14,9 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+You can use the Netlify badge above to view the live version, or you can [see the build code here](https://github.com/peteriv9606/angular-build).
+
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
