@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Live preview: [![Netlify Status](https://api.netlify.com/api/v1/badges/66eaf250-5603-4585-b888-b957e9485083/deploy-status)](https://app.netlify.com/sites/pivanov-angular-build/deploys)
 
+You can use the Netlify badge above to view the live version, or you can [see the build code here](https://github.com/peteriv9606/angular-build).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -13,9 +15,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
-
-You can use the Netlify badge above to view the live version, or you can [see the build code here](https://github.com/peteriv9606/angular-build).
-
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
