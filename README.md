@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
 
+Live preview: [![Netlify Status](https://api.netlify.com/api/v1/badges/66eaf250-5603-4585-b888-b957e9485083/deploy-status)](https://app.netlify.com/sites/pivanov-angular-build/deploys)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
