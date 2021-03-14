@@ -1,0 +1,418 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.modal-style .modal-dialog {
+  max-width: 835px;
+  display: flex;
+  height: -webkit-fill-available;
+  align-items: center;
+}
+
+.socials-expand {
+  margin: 20px 0px 0px 30px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #e89806;
+  font-family: auto;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.4s;
+}
+
+.expanded {
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+.social-icons,
+.social-icons.mobile {
+  padding-left: 1.5rem;
+  display: table-cell;
+}
+
+.social-icons.mobile {
+  display: flex;
+  padding: 0px 0px 30px;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+.social-icons a img {
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 15px 0 0;
+}
+.close,
+.close.tablet,
+.close.mobile {
+  position: relative;
+  top: 0px;
+  margin-right: 20px;
+  transform: rotate(45deg);
+}
+.close.tablet {
+  top: -50px;
+}
+.close.mobile {
+  top: 20px;
+}
+
+.close-inner {
+  /* Decoration / Yellow / 0 */
+
+  width: 29px;
+  color: #e89806;
+  background: #ffffff;
+  border: 2px solid #e89806;
+  box-sizing: border-box;
+  border-radius: 100%;
+  font-family: auto;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.close:focus,
+.popup-rating:focus {
+  outline: none;
+}
+
+.prod-title {
+  padding-top: 12px;
+  margin: 0;
+  /* Desktop / Main / Product-Title */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  /* Main / Black / 0 */
+
+  color: #282828;
+}
+
+.prod-price-new {
+  /* Desktop / Main / Product-Price-New */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  /* Decoration / Red / 0 */
+
+  color: #ce2c52;
+
+  margin: 1px 4px;
+}
+
+.prod-price-old {
+  /* Desktop / Main / Product-Price-Old */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  letter-spacing: 1px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+
+  /* Main / Black / 1 */
+
+  color: #2c303d;
+  margin: 1px 4px;
+}
+
+h3,
+h3.tablet,
+h3.mobile {
+  /* Desktop / Main / H3 */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+
+  /* Main / Black / 0 */
+
+  color: #282828;
+}
+h3.tablet {
+  padding: 20px 20px 18px;
+}
+h3.mobile {
+  padding: 65px 20px 0px;
+}
+
+.popup-prod-number,
+.popup-prod-number.tablet,
+.popup-prod-number.mobile {
+  /* Desktop / PopUp / Product-Number */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 18px 0px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 0.7px;
+
+  /* Main / Black / 3 */
+
+  color: #7b8093;
+}
+.popup-prod-number.tablet {
+  padding: 0px 0px 8px;
+  margin: 0px;
+}
+
+.popup-prod-number.mobile {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+}
+
+.popup-price-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.popup-price-container.tablet {
+  display: block;
+}
+.popup-price-container.mobile {
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.popup-product-price-old {
+  /* Desktop / PopUp / Product-Price-Old */
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+
+  /* identical to box height, or 100% */
+
+  letter-spacing: 1px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+
+  /* Main / Black / 1 */
+
+  color: #2c303d;
+}
+
+.popup-product-price-new,
+.popup-product-price-new.tablet,
+.popup-product-price-new.mobile {
+  /* Desktop / PopUp / Product-Price-New */
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  padding-left: 16px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  /* Decoration / Red / 0 */
+
+  color: #ce2c52;
+}
+
+.popup-product-price-new.tablet {
+  padding: 5px 0;
+}
+
+.popup-rating,
+.popup-rating.tablet,
+.popup-rating.mobile {
+  font-size: 17px;
+  padding: 24px 0px;
+}
+.popup-rating.tablet {
+  padding: 0px 0px 30px;
+}
+.popup-rating.mobile {
+  padding: 0px;
+}
+.mobile-number-rating {
+  padding: 0px 15.3px 30px 20px;
+}
+.popup-product-entry,
+.popup-product-entry.tablet,
+.popup-product-entry.mobile {
+  /* Desktop / PopUp / Product-Entry */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  /* identical to box height, or 142% */
+
+  /* Main / Black / 3 */
+
+  color: #7b8093;
+}
+
+.popup-product-entry.tablet {
+  padding-bottom: 66px;
+}
+
+.popup-product-entry.mobile {
+  padding: 13px 0px;
+}
+
+.size-container,
+.size-container.tablet,
+.size-container.mobile {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 24px 0px;
+}
+.size-container.tablet {
+  display: block;
+  margin-bottom: 35px;
+}
+.size-container.mobile {
+  display: block;
+  padding: 0;
+  margin: 0 0 40px;
+}
+.elipse {
+  background: #ffffff;
+  border: 1px solid #aeb3c4;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  display: inline-block;
+  margin: 0px 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.active,
+.elipse:hover {
+  /* Main / Black / 3 */
+  color: #ffffff;
+  background: #7b8093;
+}
+
+.popup-size,
+.popup-size.tablet,
+.popup-size.mobile {
+  /* Desktop / PopUp / Size */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  padding-right: 16px;
+  /* identical to box height, or 114% */
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  /* Main / Black / 1 */
+
+  color: #2c303d;
+}
+.popup-size.tablet {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.popup-size.mobile {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.popup-btn-container.mobile {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+
+.popup-btn,
+.popup-btn.mobile {
+  /* Desktop / PopUp / Btn */
+
+  /* Desktop / PopUp / Btn */
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 44px;
+  border: none;
+  /* identical to box height, or 314% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  width: 204px;
+  justify-content: center;
+
+  /* Main / Black / 6 */
+
+  color: #eaeaec;
+  background: #e89806;
+  border-radius: 22px;
+}
+.popup-btn.mobile {
+  display: block;
+  margin: 5px auto 60px;
+}
+/*Mobile device css for modal*/
+@media screen and (max-width: 425px) {
+  .modal-style .modal-dialog {
+    max-width: none;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    align-items: center;
+  }
+}

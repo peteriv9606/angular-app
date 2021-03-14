@@ -1,0 +1,18 @@
+<div class="bgImg" (mouseenter)="mouseEnter()" (mouseleave)="mouseLeave()">
+  <app-card-modal class="moreContainer" [item]="item"></app-card-modal>
+  <div class="pricesContainer">
+    <div
+      class="prod-price-old"
+      *ngIf="item.regPrice"
+      [ngStyle]="{
+        'text-decoration': item.newPrice ? 'line-through' : 'none'
+      }"
+    >
+      ${{ item.regPrice }}
+    </div>
+    <div class="prod-price-new" *ngIf="item.newPrice">${{ item.newPrice }}</div>
+  </div>
+</div>
+<p class="prod-title text-center">
+  {{ item.itemName }}
+</p>

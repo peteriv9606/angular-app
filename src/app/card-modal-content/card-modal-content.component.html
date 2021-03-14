@@ -1,0 +1,236 @@
+<div class="container-fluid p-0" *ngIf="isDesktopDevice">
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    autofocus="false"
+    (click)="activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true" class="close-inner">+</span>
+  </button>
+  <div class="row my-3">
+    <div class="col-sm">
+      <div class="bgImg">
+        <div
+          class="socials-expand"
+          (click)="expand()"
+          [ngClass]="{ expanded: isExpanded() }"
+        >
+          +
+        </div>
+        <ul class="social-icons" *ngIf="isExpanded()">
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Facebook.png" alt="fb" />
+          </a>
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Instagram.png" alt="ig" />
+          </a>
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Pinterest.png" alt="pt" />
+          </a>
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Twitter.png" alt="tw" /> </a
+          ><a href="#">
+            <img src="../../assets/Buttons/Socials/Youtube.png" alt="yt" />
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm">
+      <h3>{{ details.itemName }}</h3>
+
+      <p class="popup-prod-number">Item #:{{ details.itemNo }}</p>
+
+      <div class="popup-price-container">
+        <div
+          class="popup-product-price-old"
+          [ngStyle]="{
+            'text-decoration': details.newPrice ? 'line-through' : 'none'
+          }"
+        >
+          ${{ details.regPrice }}
+        </div>
+        <div class="popup-product-price-new" *ngIf="details.newPrice">
+          ${{ details.newPrice }}
+        </div>
+      </div>
+
+      <ngb-rating
+        class="popup-rating"
+        [max]="5"
+        [(rate)]="currentRate"
+        [readonly]="false"
+      ></ngb-rating>
+
+      <div class="popup-product-entry">{{ details.description }}</div>
+      <div class="container-fluid size-container">
+        <div class="popup-size">Size:</div>
+        <div class="popup-btn-container">
+          <div
+            *ngFor="let size of sizes"
+            class="elipse popup-product-entry"
+            (click)="select(size)"
+            [ngClass]="{ active: isActive(size) }"
+          >
+            {{ this.size }}
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="popup-btn" (click)="addToCart()">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid p-0" *ngIf="isTablet">
+  <h3 class="tablet">{{ details.itemName }}</h3>
+  <button
+    type="button"
+    class="close tablet"
+    aria-label="Close"
+    autofocus="false"
+    (click)="activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true" class="close-inner">+</span>
+  </button>
+  <div class="row">
+    <div class="col-sm">
+      <div class="bgImg">
+        <ul class="social-icons">
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Facebook.png" alt="fb" />
+          </a>
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Instagram.png" alt="ig" />
+          </a>
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Pinterest.png" alt="pt" />
+          </a>
+          <a href="#">
+            <img src="../../assets/Buttons/Socials/Twitter.png" alt="tw" /> </a
+          ><a href="#">
+            <img src="../../assets/Buttons/Socials/Youtube.png" alt="yt" />
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm">
+      <p class="popup-prod-number tablet">Item #:{{ details.itemNo }}</p>
+      <ngb-rating
+        class="popup-rating tablet"
+        [max]="5"
+        [(rate)]="currentRate"
+        [readonly]="false"
+      ></ngb-rating>
+
+      <div class="popup-price-container tablet">
+        <div
+          class="popup-product-price-old tablet"
+          [ngStyle]="{
+            'text-decoration': details.newPrice ? 'line-through' : 'none'
+          }"
+        >
+          ${{ details.regPrice }}
+        </div>
+        <div class="popup-product-price-new tablet" *ngIf="details.newPrice">
+          ${{ details.newPrice }}
+        </div>
+      </div>
+
+      <div class="container-fluid size-container tablet">
+        <div class="popup-size tablet">Select a Size:</div>
+        <div class="popup-btn-container">
+          <div
+            *ngFor="let size of sizes"
+            class="elipse popup-product-entry"
+            (click)="select(size)"
+            [ngClass]="{ active: isActive(size) }"
+          >
+            {{ this.size }}
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="popup-btn" (click)="addToCart()">
+        Add to Cart
+      </button>
+    </div>
+    <div class="container">
+      <div class="popup-size tablet">Details:</div>
+      <div class="popup-product-entry tablet">{{ details.description }}</div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid p-0" *ngIf="isMobile">
+  <button
+    type="button"
+    class="close mobile"
+    aria-label="Close"
+    autofocus="false"
+    (click)="activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true" class="close-inner">+</span>
+  </button>
+  <h3 class="mobile">{{ details.itemName }}</h3>
+  <div class="mobile-number-rating container d-flex">
+    <p class="popup-prod-number mobile mr-auto">Item #:{{ details.itemNo }}</p>
+    <ngb-rating
+      class="popup-rating mobile ml-auto"
+      [max]="5"
+      [(rate)]="currentRate"
+      [readonly]="false"
+    ></ngb-rating>
+  </div>
+  <div class="container-fluid">
+    <div class="bgImg mobile"></div>
+    <div class="popup-product-entry mobile">{{ details.description }}</div>
+    <ul class="social-icons mobile">
+      <a href="#">
+        <img src="../../assets/Buttons/Socials/Facebook.png" alt="fb" />
+      </a>
+      <a href="#">
+        <img src="../../assets/Buttons/Socials/Instagram.png" alt="ig" />
+      </a>
+      <a href="#">
+        <img src="../../assets/Buttons/Socials/Pinterest.png" alt="pt" />
+      </a>
+      <a href="#">
+        <img src="../../assets/Buttons/Socials/Twitter.png" alt="tw" /> </a
+      ><a href="#">
+        <img src="../../assets/Buttons/Socials/Youtube.png" alt="yt" />
+      </a>
+    </ul>
+
+    <div class="popup-price-container mobile">
+      <div
+        class="popup-product-price-old mobile"
+        [ngStyle]="{
+          'text-decoration': details.newPrice ? 'line-through' : 'none'
+        }"
+      >
+        ${{ details.regPrice }}
+      </div>
+      <div class="popup-product-price-new mobile" *ngIf="details.newPrice">
+        ${{ details.newPrice }}
+      </div>
+    </div>
+
+    <div class="container-fluid size-container mobile">
+      <div class="popup-size mobile">Select a Size:</div>
+      <div class="popup-btn-container mobile">
+        <div
+          *ngFor="let size of sizes"
+          class="elipse popup-product-entry"
+          (click)="select(size)"
+          [ngClass]="{ active: isActive(size) }"
+        >
+          {{ this.size }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="popup-btn mobile" (click)="addToCart()">
+    Add to Cart
+  </button>
+</div>

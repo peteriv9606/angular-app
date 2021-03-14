@@ -1,0 +1,47 @@
+[
+  {
+    "itemNo": 1231,
+    "itemName": "Product Name 1",
+    "regPrice": 29.59,
+    "newPrice": 19.99,
+    "rating": 2,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aliquid iure architecto nobis corrupti, accusamus, voluptatibus sunt aliquam aut eum laudantium voluptatum necessitatibus. Laudantium libero nesciunt autem porro sed beatae."
+  },
+  {
+    "itemNo": 1232,
+    "itemName": "Product Name 2",
+    "regPrice": 32.99,
+    "newPrice": 26.99,
+    "rating": 4,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aliquid iure architecto nobis corrupti, accusamus, voluptatibus sunt aliquam aut eum laudantium voluptatum necessitatibus. Laudantium libero nesciunt autem porro sed beatae."
+  },
+  {
+    "itemNo": 1233,
+    "itemName": "Product Name 3",
+    "regPrice": 9.99,
+    "rating": 1,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aliquid iure architecto nobis corrupti, accusamus, voluptatibus sunt aliquam aut eum laudantium voluptatum necessitatibus. Laudantium libero nesciunt autem porro sed beatae."
+  },
+  {
+    "itemNo": 1234,
+    "itemName": "Product Name 4",
+    "regPrice": 52.99,
+    "rating": 3,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aliquid iure architecto nobis corrupti, accusamus, voluptatibus sunt aliquam aut eum laudantium voluptatum necessitatibus. Laudantium libero nesciunt autem porro sed beatae."
+  },
+  {
+    "itemNo": 1235,
+    "itemName": "Product Name 5",
+    "regPrice": 69.99,
+    "newPrice": 39.99,
+    "rating": 2,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aliquid iure architecto nobis corrupti, accusamus, voluptatibus sunt aliquam aut eum laudantium voluptatum necessitatibus. Laudantium libero nesciunt autem porro sed beatae."
+  },
+  {
+    "itemNo": 1236,
+    "itemName": "Product Name 6",
+    "regPrice": 34.99,
+    "rating": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, aliquid iure architecto nobis corrupti, accusamus, voluptatibus sunt aliquam aut eum laudantium voluptatum necessitatibus. Laudantium libero nesciunt autem porro sed beatae."
+  }
+]

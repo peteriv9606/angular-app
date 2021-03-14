@@ -1,0 +1,22 @@
+ngb-rating {
+  font-size: 24px;
+  color: #ffbc1f;
+  background: white;
+  border: none;
+}
+.bgImg {
+  background: rgb(115, 144, 156);
+  background: radial-gradient(
+    circle,
+    rgba(115, 144, 156, 1) 0%,
+    rgba(32, 72, 89, 1) 100%
+  );
+  width: 400px;
+  height: 420px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.bgImg.mobile {
+  width: -webkit-fill-available;
+}
