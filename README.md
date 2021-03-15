@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Live preview: [here](https://pivanov-angular-build.netlify.app/)
 
-You can use the Netlify badge above to view the live version, or you can [see the build code here](https://github.com/peteriv9606/angular-build).
+[See the build code here](https://github.com/peteriv9606/angular-build).
 
 ## Development server
 
