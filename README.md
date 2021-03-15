@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
 
-Live preview: [![Netlify Status](https://api.netlify.com/api/v1/badges/66eaf250-5603-4585-b888-b957e9485083/deploy-status)](https://app.netlify.com/sites/pivanov-angular-build/deploys)
+Live preview: [here](https://pivanov-angular-build.netlify.app/)
 
 You can use the Netlify badge above to view the live version, or you can [see the build code here](https://github.com/peteriv9606/angular-build).
 
